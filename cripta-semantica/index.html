@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cripta Semantica | Laboratorio Ontologico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-node">{</span> CRIPTA SEMANTICA <span class="logo-node">}</span>
+            </div>
+            
+            <div class="toggle-container">
+                <span class="toggle-label">CRIPTA</span>
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">FINAI</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="hero" class="section">
+            <h1>L'Ontologia del Web</h1>
+            <p class="lead">Infrastrutture semantiche per la ricerca filosofica pubblica. Costruiamo nodi di significato nell'oscurità del dato, architettando la conoscenza umana attraverso il materialismo digitale.</p>
+            <a href="#contatti" class="btn">Accedi alla Rete</a>
+        </section>
+
+        <section id="chi-siamo" class="section">
+            <h2>Chi Siamo</h2>
+            <p>Siamo un collettivo intellettuale fuso in un'infrastruttura digitale. Rifiutiamo la vetrina della vanità contemporanea per tornare alla radice del World Wide Web: l'accumulo e la strutturazione della conoscenza.</p>
+            <p>Da un lato la speculazione rigorosa e ineludibile sul problema dell'essere. Dall'altro, la riappropriazione dei mezzi di produzione digitale tramite codice FLOSS. Edifichiamo monumenti logici per garantire la distribuzione equa del capitale semantico.</p>
+        </section>
+
+        <section id="servizi" class="section">
+            <h2>Strutture Operative</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Architettura Dati</h3>
+                    <p>Sistematizzazione della ricerca filosofica attraverso Knowledge Graphs, metadati e ontologie web rigorose.</p>
+                </article>
+                <article class="card">
+                    <h3>Editoria FLOSS</h3>
+                    <p>Sviluppo di piattaforme indipendenti e open source per sottrarre la scienza al capitalismo algoritmico.</p>
+                </article>
+                <article class="card">
+                    <h3>Ricerca Speculativa</h3>
+                    <p>Indagini, incontri e analisi sul problema del senso dell'essere nell'era del materialismo tecnologico.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contatti" class="section">
+            <h2>Inizializza Contatto</h2>
+            <p>Il nostro server è in ascolto. Richiedi l'accesso alle metriche di ricerca o proponi una tesi da integrare nella nostra architettura.</p>
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" placeholder="Identificativo (Nome)" required>
+                <input type="email" placeholder="Indirizzo di Ritorno (Email)" required>
+                <textarea rows="5" placeholder="Parametri della richiesta..." required></textarea>
+                <button type="submit" class="btn">Trasmetti Dati</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>CRIPTA SEMANTICA &copy; 2026 | Dasein = True | System.Status: Online</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('mode-toggle');
+        
+        toggle.addEventListener('change', function() {
+            if (this.checked) {
+                document.body.classList.add('finai-mode');
+            } else {
+                document.body.classList.remove('finai-mode');
+            }
+        });
+    </script>
+</body>
+</html>
