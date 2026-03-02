@@ -1,1 +1,300 @@
+:root {
+    --bg-primary: #f4f6f9;
+    --text-primary: #0033a0;
+    --border-color: #0033a0;
+    --accent-color: #001f60;
+    --bg-secondary: #ffffff;
 
+    --font-serif: "Georgia", "Times New Roman", serif;
+    --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-mono: "Courier New", Courier, monospace;
+    
+    --body-font: var(--font-sans);
+    --onto-font: var(--font-serif);
+}
+
+body.finai-mode {
+    --bg-primary: #000a1a;
+    --text-primary: #4da6ff;
+    --border-color: #4da6ff;
+    --accent-color: #ffffff;
+    --bg-secondary: #001433;
+
+    --body-font: var(--font-mono);
+    --onto-font: var(--font-mono);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--body-font);
+    line-height: 1.5;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-image: linear-gradient(var(--border-color) 1px, transparent 1px),
+                      linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-position: center top;
+}
+
+body.finai-mode {
+    background-image: linear-gradient(rgba(77, 166, 255, 0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(77, 166, 255, 0.1) 1px, transparent 1px);
+}
+
+.site-header {
+    background-color: var(--bg-secondary);
+    border-bottom: 2px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.onto {
+    font-family: var(--onto-font);
+    letter-spacing: 2px;
+}
+
+.web {
+    font-family: var(--font-mono);
+    letter-spacing: 1px;
+}
+
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    transition: .3s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px; width: 18px;
+    left: 4px; bottom: 4px;
+    background-color: var(--border-color);
+    transition: .3s;
+}
+
+input:checked + .slider {
+    background-color: var(--border-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+    background-color: var(--bg-secondary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+}
+
+.section {
+    border-bottom: 2px solid var(--border-color);
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+.col-side {
+    border-right: 2px solid var(--border-color);
+    padding: 3rem 2rem;
+}
+
+.col-main {
+    padding: 3rem 4rem;
+}
+
+.data-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.lead {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+.service-blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.block {
+    border: 2px solid var(--border-color);
+    padding: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--border-color);
+    color: var(--bg-secondary);
+    font-family: var(--font-mono);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: 2px solid var(--border-color);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--bg-secondary);
+    color: var(--border-color);
+}
+
+.blueprint-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-family: var(--font-mono);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.form-group input, .form-group textarea {
+    background-color: var(--bg-primary);
+    border: 2px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 1rem;
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    background-color: var(--bg-secondary);
+}
+
+.site-footer {
+    background-color: var(--bg-secondary);
+    border-top: 2px solid var(--border-color);
+    margin-top: 3rem;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+.site-footer .header-inner {
+    border-bottom: none;
+}
+
+@media (max-width: 900px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+    .col-side {
+        border-right: none;
+        border-bottom: 2px solid var(--border-color);
+        padding: 1.5rem 2rem;
+    }
+    .col-main {
+        padding: 2rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .header-inner {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
