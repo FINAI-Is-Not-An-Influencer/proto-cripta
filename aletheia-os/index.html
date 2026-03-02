@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aletheia Open Source | Laboratorio Ontologico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="site-header glass">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="code-bracket">{</span> <span class="eye">◯</span> <span class="code-bracket">}</span> ALETHEIA
+            </div>
+            
+            <div class="breadcrumbs">
+                <span>root</span> / <span>index</span> / <span>svelamento</span>
+            </div>
+            
+            <div class="toggle-wrapper">
+                <span class="toggle-label">CRIPTA</span>
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">FINAI</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="hero" class="section glass-panel">
+            <div class="metadata">data-node="hero" status="unveiled"</div>
+            <h1>La Verità è Open Source</h1>
+            <p class="lead">Hackeriamo le sovrastrutture del web per democratizzare la conoscenza. Mostriamo gli ingranaggi dell'ontologia digitale per un'emancipazione pubblica universale.</p>
+            <a href="#contatti" class="btn">Accedi al Codice Sorgente</a>
+        </section>
+
+        <section id="chi-siamo" class="section glass-panel">
+            <div class="metadata">data-node="about" logic="floss"</div>
+            <h2>Chi Siamo</h2>
+            <p>Siamo la sintesi tra indagine filosofica rigorosa e materialismo digitale. Rifiutiamo le architetture chiuse e le logiche capitalistiche dell'algoritmo che trasformano il Web in mera vanità.</p>
+            <p>Aletheia significa svelamento: la nostra missione è decostruire l'interfaccia e mostrare la nuda struttura della realtà informazionale, restituendo il potere semantico a chi fa ricerca attiva e indipendente.</p>
+        </section>
+
+        <section id="servizi" class="section">
+            <div class="metadata">data-node="services" iter="3"</div>
+            <h2>Infrastrutture di Emancipazione</h2>
+            <div class="card-grid">
+                <div class="card glass-panel">
+                    <div class="card-meta">type="ontology"</div>
+                    <h3>Web Semantico</h3>
+                    <p>Costruzione di reti di significato trasparenti per incrementare il rigore valutativo e la distribuzione equa del sapere.</p>
+                </div>
+                <div class="card glass-panel">
+                    <div class="card-meta">type="development"</div>
+                    <h3>Sistemi FLOSS</h3>
+                    <p>Progettazione di software libero come prerequisito irrinunciabile per l'indipendenza accademica e intellettuale.</p>
+                </div>
+                <div class="card glass-panel">
+                    <div class="card-meta">type="research"</div>
+                    <h3>Scienza Pubblica</h3>
+                    <p>Indagini sul problema fondamentale dell'essere, non più celato o mistificato dalle interfacce di manipolazione commerciale.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti" class="section glass-panel">
+            <div class="metadata">data-node="contact" protocol="http"</div>
+            <h2>Sincronizzazione Rete</h2>
+            <p>Connettiti al nodo centrale. La trasparenza assoluta richiede partecipazione.</p>
+            <form class="glass-form" action="#" method="POST">
+                <input type="text" placeholder="<nome_utente>" required>
+                <input type="email" placeholder="<indirizzo_email>" required>
+                <textarea rows="4" placeholder="<inserisci_query_ontologica>" required></textarea>
+                <button type="submit" class="btn">Esegui Comando</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer glass">
+        <p>ALETHEIA OS v1.0 | Status: Transparent | Knowledge is Free</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('mode-toggle');
+        
+        toggle.addEventListener('change', function() {
+            if (this.checked) {
+                document.body.classList.add('finai-mode');
+            } else {
+                document.body.classList.remove('finai-mode');
+            }
+        });
+    </script>
+</body>
+</html>
