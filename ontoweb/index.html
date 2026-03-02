@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OntoWeb | Laboratorio Ontologico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="onto">O N T O</span><span class="web">W E B</span>
+            </div>
+            
+            <div class="toggle-wrapper">
+                <span class="toggle-label">CRIPTA</span>
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">FINAI</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="hero" class="section grid-layout">
+            <div class="col-main">
+                <h1>Strutturare la conoscenza umana.</h1>
+                <p class="lead">Database semantico per l'archiviazione, l'analisi e la distribuzione del pensiero fondamentale. Intersezione rigorosa tra ontologia e ingegneria del software.</p>
+                <a href="#contatti" class="btn">Inizializza Query</a>
+            </div>
+            <div class="col-side data-block">
+                <div class="data-row"><span>SYS:</span> <span>ONLINE</span></div>
+                <div class="data-row"><span>DB:</span> <span>INDEXED</span></div>
+                <div class="data-row"><span>PROT:</span> <span>FLOSS</span></div>
+            </div>
+        </section>
+
+        <section id="chi-siamo" class="section grid-layout">
+            <div class="col-side section-label">
+                <h2>01. Indice</h2>
+            </div>
+            <div class="col-main">
+                <p>OntoWeb è un'infrastruttura enciclopedica progettata per decostruire e riorganizzare il sapere. Rifiutiamo la dispersione del World Wide Web contemporaneo a favore di una categorizzazione logica, misurabile e universale.</p>
+                <p>Il progetto unisce la ricerca sul senso dell'essere condotta dalla Cripta Filosofica con le pratiche di materialismo digitale di FINAI. Distribuiamo equamente capitale semantico, fornendo a ricercatori e scienziati metriche di validazione trasparenti e indipendenti dalle logiche di mercato.</p>
+            </div>
+        </section>
+
+        <section id="servizi" class="section grid-layout">
+            <div class="col-side section-label">
+                <h2>02. Moduli</h2>
+            </div>
+            <div class="col-main service-blocks">
+                <article class="block">
+                    <h3>Modellazione Semantica</h3>
+                    <p>Sviluppo di architetture dati, knowledge graphs e metadati per l'indicizzazione rigorosa dei saggi e delle ricerche filosofiche.</p>
+                </article>
+                <article class="block">
+                    <h3>Infrastruttura FLOSS</h3>
+                    <p>Democratizzazione dei mezzi di produzione digitale attraverso la scrittura e la condivisione di codice libero e aperto.</p>
+                </article>
+                <article class="block">
+                    <h3>Ontologia Speculativa</h3>
+                    <p>Confronti dialettici e produzione accademica sul problema dell'essere, strutturati per una fruizione scientifica e oggettiva.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contatti" class="section grid-layout">
+            <div class="col-side section-label">
+                <h2>03. Input</h2>
+            </div>
+            <div class="col-main">
+                <form class="blueprint-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="id">Identificativo Utente</label>
+                        <input type="text" id="id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endpoint">Endpoint (Email)</label>
+                        <input type="email" id="endpoint" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="payload">Payload (Dati da trasmettere)</label>
+                        <textarea id="payload" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Esegui POST</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="header-inner">
+            <span>ONTOWEB v1.0.0</span>
+            <span>ARCHITETTURA DELL'ESSERE</span>
+            <span>2026</span>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('mode-toggle');
+        
+        toggle.addEventListener('change', function() {
+            if (this.checked) {
+                document.body.classList.add('finai-mode');
+            } else {
+                document.body.classList.remove('finai-mode');
+            }
+        });
+    </script>
+</body>
+</html>
