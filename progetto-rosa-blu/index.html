@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto Rosa Blu | Laboratorio Ontologico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-icon">✧</span> PROGETTO ROSA BLU
+            </div>
+            
+            <div class="toggle-wrapper">
+                <span class="toggle-label">CRIPTA</span>
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">FINAI</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="hero" class="section">
+            <h1>Il Nodo della Rosa Blu</h1>
+            <p class="subtitle">C'è una tomba abbandonata al centro della rete. Non contiene spoglie, ma codici e pensiero. Accomodati, compagno di ricerca.</p>
+            <a href="#contatti" class="btn">Svela il Segreto</a>
+        </section>
+
+        <section id="chi-siamo" class="section">
+            <h2>Il Collettivo</h2>
+            <div class="content-text">
+                <p>La Cripta Filosofica è occupata, colma di pensiero e di voci. Eppure, in mezzo a questa densità, abbiamo preservato uno spazio vuoto, un nodo silente verso cui convergono tutte le altre forme di conoscenza.</p>
+                <p>Siamo una società aperta che opera nell'ombra luminosa del web. Hackeriamo la visibilità algoritmica attraverso il materialismo digitale per restituire potere semantico a chi fa ricerca pura. Uniamo l'etica del codice libero all'ineludibile necessità di filosofare.</p>
+            </div>
+        </section>
+
+        <section id="servizi" class="section">
+            <h2>Le Nostre Pratiche</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Archivio Eidetico</h3>
+                    <p>Organizziamo la conoscenza umana. Costruiamo ontologie web per incrementare le metriche valutative della ricerca filosofica.</p>
+                </div>
+                <div class="card">
+                    <h3>Infrastruttura FLOSS</h3>
+                    <p>Sviluppiamo strumenti open source per liberare i mezzi di produzione digitale dalla morsa del capitalismo della sorveglianza.</p>
+                </div>
+                <div class="card">
+                    <h3>Dialettica Pubblica</h3>
+                    <p>Conduciamo indagini con studiosi e ricercatori, portando la domanda sul senso dell'essere fuori dalle accademie chiuse.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti" class="section">
+            <h2>Lascia una Traccia</h2>
+            <p class="contact-intro">Se condividi la nostra missione, inscrivi il tuo pensiero nel registro.</p>
+            <form class="secret-form">
+                <div class="input-group">
+                    <input type="text" id="nome" placeholder="Il tuo appellativo" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Il tuo recapito digitale" required>
+                </div>
+                <div class="input-group">
+                    <textarea id="messaggio" rows="4" placeholder="La tua speculazione..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Invia Messaggio</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>Progetto Rosa Blu ✧ La tomba è piena di rose.</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('mode-toggle');
+        
+        toggle.addEventListener('change', function() {
+            if (this.checked) {
+                document.body.classList.add('finai-mode');
+            } else {
+                document.body.classList.remove('finai-mode');
+            }
+        });
+    </script>
+</body>
+</html>
