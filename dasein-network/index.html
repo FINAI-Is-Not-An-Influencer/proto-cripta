@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasein Network | Laboratorio Ontologico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-mark">&lt;&Phi;&gt;</span> DASEIN NETWORK
+            </div>
+            
+            <div class="toggle-wrapper">
+                <span class="toggle-label">CRIPTA</span>
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">FINAI</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="layout-grid">
+        
+        <section id="hero" class="grid-section">
+            <div class="content-block">
+                <p class="meta-text">Documento n. 001 // Fenomenologia del Web</p>
+                <h1>Ricerca pura. Nessuna distrazione. Solo l'essere dell'infrastruttura.</h1>
+                <p class="abstract">Il Dasein Network è un nodo di ricerca indipendente che opera all'intersezione tra ontologia fondamentale e materialismo digitale. Rifiutiamo l'estetica commerciale per mostrare la nuda struttura della conoscenza.</p>
+                <a href="#contatti" class="action-link">[ Inizia Indagine ]</a>
+            </div>
+        </section>
+
+        <section id="chi-siamo" class="grid-section">
+            <div class="content-block">
+                <h2>Dichiarazione d'Intenti</h2>
+                <p>Operiamo una riduzione eidetica dello spazio digitale. In un World Wide Web saturato dal rumore, dall'engagement artificiale e dalle logiche del capitale, noi proponiamo il ritorno alla radice semantica della rete.</p>
+                <p>Uniamo il rigore speculativo di PerversaPhilosophia all'etica hacker FLOSS di FINAI. Lo scopo non è persuadere, ma disvelare le gerarchie celate e democratizzare i mezzi di produzione della verità scientifica.</p>
+            </div>
+        </section>
+
+        <section id="servizi" class="grid-section">
+            <div class="content-block">
+                <h2>Aree di Indagine Operativa</h2>
+                <div class="services-grid">
+                    <article class="service-box">
+                        <h3>01. Ontologia Fondamentale</h3>
+                        <p>Sviluppo di tesi e confronti dialettici sul problema dell'essere, decostruendo la tecnica contemporanea.</p>
+                    </article>
+                    <article class="service-box">
+                        <h3>02. Codice Libero (FLOSS)</h3>
+                        <p>Riappropriazione degli strumenti digitali tramite software open source per l'emancipazione accademica.</p>
+                    </article>
+                    <article class="service-box">
+                        <h3>03. Web Semantico</h3>
+                        <p>Strutturazione dei dati e dei Knowledge Graph per accumulare ed esporre capitale semantico oggettivo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti" class="grid-section">
+            <div class="content-block">
+                <h2>Protocollo di Comunicazione</h2>
+                <p class="meta-text">Inserire le direttive per inizializzare un confronto dialettico o tecnico.</p>
+                <form class="academic-form" action="#" method="POST">
+                    <div class="form-row">
+                        <label for="identita">Identificativo [Nome / Ente]</label>
+                        <input type="text" id="identita" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Vettore di Risposta [Email]</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="tesi">Tesi o Richiesta [Max 5000 byte]</label>
+                        <textarea id="tesi" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="action-link submit-btn">[ Trasmetti Protocollo ]</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>DASEIN NETWORK // Ontologia & Infrastruttura. Base dati aggiornata: 2026.</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('mode-toggle');
+        
+        toggle.addEventListener('change', function() {
+            if (this.checked) {
+                document.body.classList.add('finai-mode');
+            } else {
+                document.body.classList.remove('finai-mode');
+            }
+        });
+    </script>
+</body>
+</html>
